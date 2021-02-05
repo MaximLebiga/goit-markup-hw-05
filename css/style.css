@@ -34,11 +34,29 @@ body {
   line-height: 1.143;
   letter-spacing: 0.02em;
   color: #212121;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
 }
 
 .navigation-list-link:hover,
 .navigation-list-link:focus {
   color: #2196f3;
+}
+
+.navigation-list-item {
+  position: relative;
+}
+
+.chosen-navigation-list-link::before {
+  position: absolute;
+  content: "";
+  height: 4px;
+  width: 100%;
+  background: #2196f3;
+  border-radius: 2px;
+  top: 46px;
+  left: 0px;
 }
 
 .chosen-navigation-list-link {
@@ -54,6 +72,9 @@ body {
   letter-spacing: 0.02em;
   color: #757575;
   align-items: center;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
 }
 
 .address-mail > svg {
@@ -61,6 +82,9 @@ body {
   height: 12px;
   margin-right: 10px;
   fill: #757575;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: fill;
 }
 
 .address-tel {
@@ -72,6 +96,9 @@ body {
   letter-spacing: 0.02em;
   color: #757575;
   justify-content: center;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
 }
 
 .address-tel > svg {
@@ -79,6 +106,9 @@ body {
   height: 16px;
   margin-right: 10px;
   fill: #757575;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: fill;
 }
 
 header a {
@@ -291,7 +321,28 @@ header {
 }
 
 .work-list-item {
+  position: relative;
   margin: 15px;
+}
+
+.work-list-item-text {
+  position: absolute;
+  width: 205px;
+  height: 16px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: rgba(47, 48, 58, 0.8);
+  padding-top: 25px;
+  padding-bottom: 40px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 /*================== WORK ==================  */
 
@@ -347,12 +398,15 @@ header {
   height: 45px;
   justify-content: center;
   align-items: center;
+  border-radius: 50%;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color;
 }
 
 .social-item-link:hover,
 .social-item-link:focus {
   background-color: #2196f3;
-  border-radius: 50%;
 }
 
 .social-item-link:hover .social-icon,
@@ -364,6 +418,9 @@ header {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: fill;
 }
 
 .social-list {
@@ -382,31 +439,49 @@ header {
   width: 45px;
   height: 50px;
   fill: #afb1b8;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: fill;
 }
 .client-logo-two {
   width: 40px;
   height: 52px;
   fill: #afb1b8;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: fill;
 }
 .client-logo-three {
   width: 41px;
   height: 43px;
   fill: #afb1b8;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: fill;
 }
 .client-logo-four {
   width: 80px;
   height: 42px;
   fill: #afb1b8;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: fill;
 }
 .client-logo-five {
   width: 59px;
   height: 47px;
   fill: #afb1b8;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: fill;
 }
 .client-logo-six {
   width: 89px;
   height: 46px;
   fill: #afb1b8;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: fill;
 }
 
 .client-list-item-link {
@@ -417,6 +492,9 @@ header {
   border-radius: 4px;
   justify-content: center;
   align-items: center;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: border-color;
 }
 
 .client-list-item-link:hover,
@@ -442,6 +520,9 @@ header {
   line-height: 1.715;
   letter-spacing: 0.03em;
   color: #ffffff;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
 }
 
 .address-footer-mail,
@@ -452,6 +533,9 @@ header {
   line-height: 1.715;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
 }
 
 footer {
@@ -495,6 +579,9 @@ footer a {
   background: rgba(255, 255, 255, 0.1);
   justify-content: center;
   align-items: center;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color;
 }
 
 .social-footer-list-item:not(:last-child) {
@@ -536,6 +623,9 @@ footer a {
   border-radius: 4px;
   border: 0px;
   padding: 6px 20px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color, box-shadow, border-radius, color;
 }
 
 .filters-list-button:hover,
@@ -589,7 +679,34 @@ footer a {
   flex-wrap: wrap;
 }
 
-.portfolio-list-item-link > img {
+.portfolio-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-img-text {
+  position: absolute;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.556;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  background-color: rgba(33, 150, 243, 0.9);
+  top: 0;
+  left: 0;
+  padding: 63px 24px;
+  transform: translateY(100%);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: transform;
+}
+
+.portfolio-img:hover .portfolio-img-text {
+  transform: translateY(0%);
+}
+
+.portfolio-img > img {
   width: 100%;
 }
 
@@ -608,6 +725,9 @@ footer a {
   background: #ffffff;
   border: 1px solid #eeeeee;
   width: 370px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: box-shadow;
 }
 
 .portfolio-list-item-link:hover,
