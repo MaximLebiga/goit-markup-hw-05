@@ -52,7 +52,7 @@
         <section class="hero-section">
             <div class="container">
             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-            <button type="button" class="modal-button">Заказать услугу</button>
+            <button type="button" class="modal-button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
         <section class="advantages-section">
@@ -103,16 +103,22 @@
                 <h2 class="title">Чем мы занимаемся</h2>
                 <ul class="work-list list">
                     <li class="work-list-item">
-                        <img src="./images/about/img.png" alt="специалист пишет код" width="370" height="294">
-                        <p class="work-list-item-text">Десктопные приложения</p>
+                        <div class="work-img">
+                            <img src="./images/about/img.png" alt="специалист пишет код" width="370" height="294">
+                            <p class="work-list-item-text">Десктопные приложения</p>
+                        </div>
                     </li>
                     <li class="work-list-item">
-                        <img src="./images/about/img-1.png" alt="специалист создаёт макет мобильного приложения" width="370" height="294">
-                        <p class="work-list-item-text">Мобильные приложения</p>
+                        <div class="work-img">
+                            <img src="./images/about/img-1.png" alt="специалист создаёт макет мобильного приложения" width="370" height="294">
+                            <p class="work-list-item-text">Мобильные приложения</p>
+                        </div>
                     </li>
                     <li class="work-list-item">
-                        <img src="./images/about/img-2.png" alt="специалист выберает цвета" width="370" height="294">
-                        <p class="work-list-item-text">Дизайнерские решения</p>
+                        <div class="work-img">
+                            <img src="./images/about/img-2.png" alt="специалист выберает цвета" width="370" height="294">
+                            <p class="work-list-item-text">Дизайнерские решения</p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -376,5 +382,15 @@
             </div>
         </div>   
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-close-button" data-modal-close>
+                <svg>
+                    <use href="./images/sprite.svg#icon-Vector"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
