@@ -706,7 +706,8 @@ footer a {
   transition-property: transform;
 }
 
-.portfolio-img:hover .portfolio-img-text {
+.portfolio-list-item-link:hover .portfolio-img-text,
+.portfolio-list-item-link:focus .portfolio-img-text {
   transform: translateY(0%);
 }
 
